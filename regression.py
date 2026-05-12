@@ -10,9 +10,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Title
 st.title("Used Car Price Prediction using SVR")
 
-# Load dataset
-df = pd.read_csv(r"C:\Users\Vemula Anitha\Downloads\archive (6)\final_indian_used_car_market_dataset.csv")
-# Cleaning
+df = pd.read_csv("final_indian_used_car_market_dataset.csv")
 df.dropna(inplace=True)
 df.drop_duplicates(inplace=True)
 
